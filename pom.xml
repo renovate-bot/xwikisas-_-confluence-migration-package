@@ -20,8 +20,7 @@
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
 -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.xwiki.parent</groupId>
@@ -30,7 +29,7 @@
   </parent>
   <groupId>com.xwiki.confluence</groupId>
   <artifactId>confluence-pro</artifactId>
-  <version>1.0-rc-2-SNAPSHOT</version>
+  <version>1.0-rc-2</version>
   <packaging>pom</packaging>
   <name>Confluence Migration Package - Parent POM</name>
   <properties>
@@ -47,7 +46,7 @@
     <connection>scm:git:git://github.com/xwikisas/confluence-pro.git</connection>
     <developerConnection>scm:git:git@github.com:xwikisas/confluence-pro.git</developerConnection>
     <url>https://github.com/xwikisas/confluence-pro</url>
-    <tag>HEAD</tag>
+    <tag>confluence-pro-1.0-rc-2</tag>
   </scm>
   <issueManagement>
     <system>GitHub</system>
