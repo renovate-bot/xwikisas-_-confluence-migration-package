@@ -20,7 +20,8 @@
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
 -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.xwiki.parent</groupId>
@@ -30,9 +31,8 @@
   <groupId>com.xwiki.confluence</groupId>
   <artifactId>confluence-pro</artifactId>
   <version>1.0-rc-2-SNAPSHOT</version>
-  <packaging>xar</packaging>
-  <name>Confluence Migration Package</name>
-  <description>All the tools that you need to successfully migrate from Confluence to XWiki. Includes technical support on XWiki, all Pro Apps and recommended extensions. Try it free!</description>
+  <packaging>pom</packaging>
+  <name>Confluence Migration Package - Parent POM</name>
   <properties>
     <licensing.version>1.25</licensing.version>
     <confluence-migrator.version>1.22.4</confluence-migrator.version>
@@ -40,12 +40,8 @@
     <task-manager.version>3.5.0</task-manager.version>
     <blog-application.version>9.13.9</blog-application.version>
     <xwiki-pro.version>13.12.3</xwiki-pro.version>
-    <xwiki.extension.licensing.packageId>
-      com.xwiki.pro:xwiki-pro-package
-    </xwiki.extension.licensing.packageId>
-    <xwiki.extension.licensing.packageVersion>
-      ${xwiki-pro.version}
-    </xwiki.extension.licensing.packageVersion>
+    <!--  Remove after XWiki Pro will not depend on the legacy module of pro macros anymore.  -->
+    <xwiki.enforcer.no-legacy-dependencies.skip>true</xwiki.enforcer.no-legacy-dependencies.skip>
   </properties>
   <scm>
     <connection>scm:git:git://github.com/xwikisas/confluence-pro.git</connection>
@@ -57,48 +53,38 @@
     <system>GitHub</system>
     <url>https://github.com/xwikisas/confluence-pro/issues</url>
   </issueManagement>
-  <dependencies>
-    <dependency>
-      <groupId>com.xwiki.confluencepro</groupId>
-      <artifactId>application-confluence-migrator-pro-ui</artifactId>
-      <version>${confluence-migrator.version}</version>
-      <scope>runtime</scope>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>com.xwiki.pro</groupId>
-      <artifactId>xwiki-pro-macros-confluence-bridges-ui</artifactId>
-      <version>${pro-macros.version}</version>
-      <scope>runtime</scope>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>com.xwiki.task</groupId>
-      <artifactId>application-task-ui</artifactId>
-      <version>${task-manager.version}</version>
-      <scope>runtime</scope>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.contrib.blog</groupId>
-      <artifactId>application-blog-ui</artifactId>
-      <version>${blog-application.version}</version>
-      <type>xar</type>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.xwiki.licensing</groupId>
-      <artifactId>application-licensing-licensor-api</artifactId>
-      <version>${licensing.version}</version>
-      <scope>runtime</scope>
-    </dependency>
-  </dependencies>
+  <modules>
+    <module>confluence-pro-ui</module>
+    <module>confluence-pro-xip</module>
+  </modules>
   <dependencyManagement>
     <dependencies>
+      <!--  Needed because some pro apps depend on each other and the versions might not be synced with
+       the ones coming from confluence-pro.  -->
       <dependency>
         <groupId>com.xwiki.task</groupId>
         <artifactId>application-task-api</artifactId>
         <version>${task-manager.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.xwiki.task</groupId>
+        <artifactId>application-task-ui</artifactId>
+        <version>${task-manager.version}</version>
+        <type>xar</type>
+      </dependency>
+      <dependency>
+        <groupId>com.xwiki.pro</groupId>
+        <artifactId>xwiki-pro-macros-ui</artifactId>
+        <version>${pro-macros.version}</version>
+        <type>xar</type>
+      </dependency>
+      <!--  This was added because latex app forces the usage of plexus-archiver v4.8.0 while the 13.10 platform is at a
+       different version. As of 15.7-rc-1, the platform uses 4.8.0. This dependency management block should be removed
+       when the pro apps depend on a version greater or equal to the aforementioned one.  -->
+      <dependency>
+        <groupId>org.codehaus.plexus</groupId>
+        <artifactId>plexus-archiver</artifactId>
+        <version>4.8.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
