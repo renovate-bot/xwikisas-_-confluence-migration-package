@@ -29,7 +29,7 @@
   </parent>
   <groupId>com.xwiki.confluence</groupId>
   <artifactId>confluence-pro</artifactId>
-  <version>1.0-rc-2</version>
+  <version>1.0-rc-3-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Confluence Migration Package - Parent POM</name>
   <properties>
@@ -46,7 +46,7 @@
     <connection>scm:git:git://github.com/xwikisas/confluence-pro.git</connection>
     <developerConnection>scm:git:git@github.com:xwikisas/confluence-pro.git</developerConnection>
     <url>https://github.com/xwikisas/confluence-pro</url>
-    <tag>confluence-pro-1.0-rc-2</tag>
+    <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub</system>
