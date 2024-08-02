@@ -28,9 +28,9 @@
     <version>1.1-SNAPSHOT</version>
   </parent>
   <artifactId>confluence-migration-package-xip</artifactId>
-  <name>Confluence Migration Package - XIP</name>
+  <name>Confluence Migration Toolkit - XIP</name>
   <packaging>xip</packaging>
-  <description>Package containing everything needed to install Confluence Migration Package offline.</description>
+  <description>Package containing everything needed to install Confluence Migration Toolkit offline.</description>
   <dependencies>
     <dependency>
       <groupId>com.xwiki.pro</groupId>

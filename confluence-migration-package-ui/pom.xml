@@ -29,7 +29,7 @@
   </parent>
   <artifactId>confluence-migration-package-ui</artifactId>
   <packaging>xar</packaging>
-  <name>Confluence Migration Package</name>
+  <name>Confluence Migration Toolkit</name>
   <description>All the tools that you need to successfully migrate from Confluence to XWiki. Includes technical support on XWiki, all Pro Apps and recommended extensions. Try it free!</description>
   <properties>
     <xwiki.extension.licensing.packageId>

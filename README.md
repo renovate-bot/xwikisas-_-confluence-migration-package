@@ -1,4 +1,4 @@
-# Confluence Migration Package
+# Confluence Migration Toolkit
 
 All the tools that you need to successfully migrate from Confluence to XWiki. Includes technical support on XWiki, all Pro Apps and recommended extensions.
 
