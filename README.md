@@ -4,4 +4,4 @@ All the tools that you need to successfully migrate from Confluence to XWiki. In
 
 * Project Lead: [Teo Caras](https://github.com/trrenty)
 * [Development Practices](http://dev.xwiki.org/xwiki/bin/view/Community/DevelopmentPractices)
-* Continuous Integration Status: [![Build Status](http://ci.xwikisas.com/view/All/job/xwikisas/job/confluence-pro/job/master/badge/icon)](http://ci.xwikisas.com/view/All/job/xwikisas/job/confluence-pro/job/master/)
+* Continuous Integration Status: [![Build Status](http://ci.xwikisas.com/view/All/job/xwikisas/job/confluence-migration-package/job/master/badge/icon)](http://ci.xwikisas.com/view/All/job/xwikisas/job/confluence-migration-package/job/master/)

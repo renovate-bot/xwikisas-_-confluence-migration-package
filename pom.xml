@@ -43,14 +43,14 @@
     <xwiki.enforcer.no-legacy-dependencies.skip>true</xwiki.enforcer.no-legacy-dependencies.skip>
   </properties>
   <scm>
-    <connection>scm:git:git://github.com/xwikisas/confluence-pro.git</connection>
-    <developerConnection>scm:git:git@github.com:xwikisas/confluence-pro.git</developerConnection>
-    <url>https://github.com/xwikisas/confluence-pro</url>
+    <connection>scm:git:git://github.com/xwikisas/confluence-migration-package.git</connection>
+    <developerConnection>scm:git:git@github.com:xwikisas/confluence-migration-package.git</developerConnection>
+    <url>https://github.com/xwikisas/confluence-migration-package</url>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/xwikisas/confluence-pro/issues</url>
+    <url>https://github.com/xwikisas/confluence-migration-package/issues</url>
   </issueManagement>
   <modules>
     <module>confluence-migration-package-ui</module>
@@ -59,7 +59,7 @@
   <dependencyManagement>
     <dependencies>
       <!--  Needed because some pro apps depend on each other and the versions might not be synced with
-       the ones coming from confluence-pro.  -->
+       the ones coming from confluence-migration-package.  -->
       <dependency>
         <groupId>com.xwiki.task</groupId>
         <artifactId>application-task-api</artifactId>
