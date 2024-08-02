@@ -28,7 +28,7 @@
     <version>14.10-1</version>
   </parent>
   <groupId>com.xwiki.confluence</groupId>
-  <artifactId>confluence-pro</artifactId>
+  <artifactId>confluence-migration-package</artifactId>
   <version>1.0-rc-3-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Confluence Migration Package - Parent POM</name>
@@ -53,8 +53,8 @@
     <url>https://github.com/xwikisas/confluence-pro/issues</url>
   </issueManagement>
   <modules>
-    <module>confluence-pro-ui</module>
-    <module>confluence-pro-xip</module>
+    <module>confluence-migration-package-ui</module>
+    <module>confluence-migration-package-xip</module>
   </modules>
   <dependencyManagement>
     <dependencies>

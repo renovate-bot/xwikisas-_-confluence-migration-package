@@ -24,10 +24,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.xwiki.confluence</groupId>
-    <artifactId>confluence-pro</artifactId>
+    <artifactId>confluence-migration-package</artifactId>
     <version>1.0-rc-3-SNAPSHOT</version>
   </parent>
-  <artifactId>confluence-pro-ui</artifactId>
+  <artifactId>confluence-migration-package-ui</artifactId>
   <packaging>xar</packaging>
   <name>Confluence Migration Package</name>
   <description>All the tools that you need to successfully migrate from Confluence to XWiki. Includes technical support on XWiki, all Pro Apps and recommended extensions. Try it free!</description>

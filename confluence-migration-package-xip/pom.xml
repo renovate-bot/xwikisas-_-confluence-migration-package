@@ -24,10 +24,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.xwiki.confluence</groupId>
-    <artifactId>confluence-pro</artifactId>
+    <artifactId>confluence-migration-package</artifactId>
     <version>1.0-rc-3-SNAPSHOT</version>
   </parent>
-  <artifactId>confluence-pro-xip</artifactId>
+  <artifactId>confluence-migration-package-xip</artifactId>
   <name>Confluence Migration Package - XIP</name>
   <packaging>xip</packaging>
   <description>Package containing everything needed to install Confluence Migration Package offline.</description>
@@ -41,7 +41,7 @@
     </dependency>
     <dependency>
       <groupId>com.xwiki.confluence</groupId>
-      <artifactId>confluence-pro-ui</artifactId>
+      <artifactId>confluence-migration-package-ui</artifactId>
       <version>${project.version}</version>
       <type>xar</type>
       <scope>provided</scope>
