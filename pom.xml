@@ -35,7 +35,7 @@
   <properties>
     <licensing.version>1.26</licensing.version>
     <confluence-migrator.version>1.22.5</confluence-migrator.version>
-    <pro-macros.version>1.22.2</pro-macros.version>
+    <pro-macros.version>1.19.8</pro-macros.version>
     <task-manager.version>3.5.0</task-manager.version>
     <blog-application.version>9.13.9</blog-application.version>
     <xwiki-pro.version>13.12.3</xwiki-pro.version>
