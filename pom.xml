@@ -46,7 +46,7 @@
   <scm>
     <connection>scm:git:git://github.com/xwikisas/confluence-migration-package.git</connection>
     <developerConnection>scm:git:git@github.com:xwikisas/confluence-migration-package.git</developerConnection>
-    <url>https://github.com/xwikisas/confluence-migration-package</url>
+    <url>https://github.com/xwikisas/confluence-migration-package/tree/main</url>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
