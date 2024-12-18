@@ -33,13 +33,14 @@
   <packaging>pom</packaging>
   <name>Confluence Migration Toolkit - Parent POM</name>
   <properties>
-    <licensing.version>1.26</licensing.version>
-    <confluence-migrator.version>1.27.11</confluence-migrator.version>
-    <pro-macros.version>1.25.2</pro-macros.version>
-    <task-manager.version>3.5.1</task-manager.version>
+    <licensing.version>1.27</licensing.version>
+    <confluence-migrator.version>1.28.0</confluence-migrator.version>
+    <pro-macros.version>1.25.3</pro-macros.version>
+    <task-manager.version>3.6.2</task-manager.version>
     <blog-application.version>9.13.9</blog-application.version>
     <macro-pdf.version>2.5.6</macro-pdf.version>
     <xwiki-pro.version>13.12.3</xwiki-pro.version>
+    <confluence-xml.version>9.67.0</confluence-xml.version>
     <!--  Remove after XWiki Pro will not depend on the legacy module of pro macros anymore.  -->
     <xwiki.enforcer.no-legacy-dependencies.skip>true</xwiki.enforcer.no-legacy-dependencies.skip>
   </properties>
@@ -77,6 +78,16 @@
         <artifactId>xwiki-pro-macros-ui</artifactId>
         <version>${pro-macros.version}</version>
         <type>xar</type>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.contrib.confluence</groupId>
+        <artifactId>confluence-resolvers</artifactId>
+        <version>${confluence-xml.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.xwiki.date</groupId>
+        <artifactId>macro-date-api</artifactId>
+        <version>${task-manager.version}</version>
       </dependency>
       <dependency>
         <groupId>com.xwiki.pdfviewer</groupId>
