@@ -103,6 +103,13 @@
         <artifactId>plexus-archiver</artifactId>
         <version>4.8.0</version>
       </dependency>
+      <dependency>
+        <groupId>org.xwiki.contrib.blog</groupId>
+        <artifactId>application-blog-ui</artifactId>
+        <version>${blog-application.version}</version>
+        <type>xar</type>
+        <scope>runtime</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
