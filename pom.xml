@@ -34,11 +34,14 @@
     <licensing.version>1.27</licensing.version>
     <confluence-migrator.version>1.29.3</confluence-migrator.version>
     <pro-macros.version>1.26.1</pro-macros.version>
-    <task-manager.version>3.6.3</task-manager.version>
+    <task-manager.version>3.6.6</task-manager.version>
     <blog-application.version>9.13.11</blog-application.version>
     <macro-pdf.version>2.6.1</macro-pdf.version>
-    <xwiki-pro.version>13.12.3</xwiki-pro.version>
-    <confluence-xml.version>9.77.0</confluence-xml.version>
+    <xwiki-pro.version>13.13.0</xwiki-pro.version>
+    <confluence-xml.version>9.77.2</confluence-xml.version>
+    <macrofullcalendar.version>2.4.0</macrofullcalendar.version>
+    <!--  Needed for Latex dependency coming from XWiki Pro  -->
+    <dockerJava.version>3.3.6</dockerJava.version>
     <!--  Remove after XWiki Pro will not depend on the legacy module of pro macros anymore.  -->
     <xwiki.enforcer.no-legacy-dependencies.skip>true</xwiki.enforcer.no-legacy-dependencies.skip>
   </properties>
@@ -78,6 +81,17 @@
         <type>xar</type>
       </dependency>
       <dependency>
+        <groupId>org.xwiki.contrib</groupId>
+        <artifactId>macro-fullcalendar-api</artifactId>
+        <version>${macrofullcalendar.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.contrib</groupId>
+        <artifactId>macro-fullcalendar-ui</artifactId>
+        <version>${macrofullcalendar.version}</version>
+        <type>xar</type>
+      </dependency>
+      <dependency>
         <groupId>org.xwiki.contrib.confluence</groupId>
         <artifactId>confluence-resolvers</artifactId>
         <version>${confluence-xml.version}</version>
@@ -107,6 +121,34 @@
         <version>${blog-application.version}</version>
         <type>xar</type>
         <scope>runtime</scope>
+      </dependency>
+      <!-- Needed for docker-java-transport-httpclient5 to work properly. Latex uses newer version. -->
+      <dependency>
+        <groupId>net.java.dev.jna</groupId>
+        <artifactId>jna</artifactId>
+        <version>5.13.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.docker-java</groupId>
+        <artifactId>docker-java-core</artifactId>
+        <version>${dockerJava.version}</version>
+        <exclusions>
+          <!-- Exclude dependencies since the version of XWiki specified in the platform parent POM can provide older
+               versions than the ones defined in docker-java -->
+          <exclusion>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcpkix-jdk18on</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>com.github.docker-java</groupId>
+        <artifactId>docker-java-transport-httpclient5</artifactId>
+        <version>${dockerJava.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
