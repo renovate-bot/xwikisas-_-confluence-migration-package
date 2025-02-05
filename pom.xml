@@ -32,8 +32,8 @@
   <name>Confluence Migration Toolkit - Parent POM</name>
   <properties>
     <licensing.version>1.27</licensing.version>
-    <confluence-migrator.version>1.29.4</confluence-migrator.version>
-    <pro-macros.version>1.26.1</pro-macros.version>
+    <confluence-migrator.version>1.29.5</confluence-migrator.version>
+    <pro-macros.version>1.26.2</pro-macros.version>
     <task-manager.version>3.6.6</task-manager.version>
     <blog-application.version>9.13.11</blog-application.version>
     <macro-pdf.version>2.6.1</macro-pdf.version>
