@@ -32,14 +32,14 @@
   <name>Confluence Migration Toolkit - Parent POM</name>
   <properties>
     <licensing.version>1.29</licensing.version>
-    <confluence-migrator.version>1.35.1</confluence-migrator.version>
+    <confluence-migrator.version>1.35.2</confluence-migrator.version>
     <pro-macros.version>1.26.19</pro-macros.version>
-    <task-manager.version>3.7.1</task-manager.version>
+    <task-manager.version>3.9.2</task-manager.version>
     <blog-application.version>9.13.11</blog-application.version>
     <macro-pdf.version>2.6.1</macro-pdf.version>
     <xwiki-pro.version>13.13.2</xwiki-pro.version>
-    <confluence-xml.version>9.86.0</confluence-xml.version>
-    <macrofullcalendar.version>2.4.3</macrofullcalendar.version>
+    <confluence-xml.version>9.88.0</confluence-xml.version>
+    <macrofullcalendar.version>2.4.5</macrofullcalendar.version>
     <!--  Needed for Latex dependency coming from XWiki Pro  -->
     <dockerJava.version>3.3.6</dockerJava.version>
     <!--  Remove after XWiki Pro will not depend on the legacy module of pro macros anymore.  -->
