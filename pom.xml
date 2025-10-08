@@ -113,7 +113,7 @@
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
         <artifactId>plexus-archiver</artifactId>
-        <version>4.8.0</version>
+        <version>4.10.3</version>
       </dependency>
       <dependency>
         <groupId>org.xwiki.contrib.blog</groupId>
