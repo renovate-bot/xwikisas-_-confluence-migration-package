@@ -41,7 +41,7 @@
     <confluence-xml.version>9.88.4</confluence-xml.version>
     <macrofullcalendar.version>2.4.6</macrofullcalendar.version>
     <!--  Needed for Latex dependency coming from XWiki Pro  -->
-    <dockerJava.version>3.6.0</dockerJava.version>
+    <dockerJava.version>3.3.6</dockerJava.version>
     <!--  Remove after XWiki Pro will not depend on the legacy module of pro macros anymore.  -->
     <xwiki.enforcer.no-legacy-dependencies.skip>true</xwiki.enforcer.no-legacy-dependencies.skip>
   </properties>
@@ -107,13 +107,12 @@
         <version>${macro-pdf.version}</version>
         <type>xar</type>
       </dependency>
-      <!--  This was added because latex app forces the usage of plexus-archiver v4.8.0 while the 13.10 platform is at a
-       different version. As of 15.7-rc-1, the platform uses 4.8.0. This dependency management block should be removed
-       when the pro apps depend on a version greater or equal to the aforementioned one.  -->
+      <!--  This was added because latex app forces the usage of plexus-archiver v4.10.3 while the 14.10 platform is
+      at a different version. -->
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
         <artifactId>plexus-archiver</artifactId>
-        <version>4.10.3</version>
+        <version>4.8.0</version>
       </dependency>
       <dependency>
         <groupId>org.xwiki.contrib.blog</groupId>
