@@ -27,7 +27,7 @@
   </parent>
   <groupId>com.xwiki.confluence</groupId>
   <artifactId>confluence-migration-package</artifactId>
-  <version>1.0.33-SNAPSHOT</version>
+  <version>1.0.33</version>
   <packaging>pom</packaging>
   <name>Confluence Migration Toolkit - Parent POM</name>
   <properties>
@@ -44,12 +44,13 @@
     <dockerJava.version>3.3.6</dockerJava.version>
     <!--  Remove after XWiki Pro will not depend on the legacy module of pro macros anymore.  -->
     <xwiki.enforcer.no-legacy-dependencies.skip>true</xwiki.enforcer.no-legacy-dependencies.skip>
+    <diagram.version>1.22.6</diagram.version>
   </properties>
   <scm>
     <connection>scm:git:git://github.com/xwikisas/confluence-migration-package.git</connection>
     <developerConnection>scm:git:git@github.com:xwikisas/confluence-migration-package.git</developerConnection>
     <url>https://github.com/xwikisas/confluence-migration-package/tree/main</url>
-    <tag>HEAD</tag>
+    <tag>confluence-migration-package-1.0.33</tag>
   </scm>
   <issueManagement>
     <system>GitHub</system>
