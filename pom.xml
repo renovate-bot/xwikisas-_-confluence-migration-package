@@ -64,6 +64,16 @@
       <!--  Needed because some pro apps depend on each other and the versions might not be synced with
        the ones coming from confluence-migration-package.  -->
       <dependency>
+        <groupId>com.xwiki.diagram</groupId>
+        <artifactId>application-diagram-api</artifactId>
+        <version>${diagram.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.xwiki.diagram</groupId>
+        <artifactId>application-diagram</artifactId>
+        <version>${diagram.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.xwiki.task</groupId>
         <artifactId>application-task-api</artifactId>
         <version>${task-manager.version}</version>
