@@ -25,7 +25,7 @@
   <parent>
     <groupId>com.xwiki.confluence</groupId>
     <artifactId>confluence-migration-package</artifactId>
-    <version>1.0.37</version>
+    <version>1.0.38-SNAPSHOT</version>
   </parent>
   <artifactId>confluence-migration-package-xip</artifactId>
   <name>Confluence Migration Toolkit - XIP</name>
