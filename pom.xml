@@ -27,7 +27,7 @@
   </parent>
   <groupId>com.xwiki.confluence</groupId>
   <artifactId>confluence-migration-package</artifactId>
-  <version>1.0.37-SNAPSHOT</version>
+  <version>1.0.37</version>
   <packaging>pom</packaging>
   <name>Confluence Migration Toolkit - Parent POM</name>
   <properties>
@@ -52,7 +52,7 @@
     <connection>scm:git:git://github.com/xwikisas/confluence-migration-package.git</connection>
     <developerConnection>scm:git:git@github.com:xwikisas/confluence-migration-package.git</developerConnection>
     <url>https://github.com/xwikisas/confluence-migration-package/tree/main</url>
-    <tag>HEAD</tag>
+    <tag>confluence-migration-package-1.0.37</tag>
   </scm>
   <issueManagement>
     <system>GitHub</system>
