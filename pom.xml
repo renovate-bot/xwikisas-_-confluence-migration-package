@@ -164,6 +164,11 @@
         <version>${task-manager.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.xwiki.date</groupId>
+	<artifactId>macro-date-default</artifactId>
+        <version>${task-manager.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.xwiki.pdfviewer</groupId>
         <artifactId>macro-pdfviewer-ui</artifactId>
         <version>${macro-pdf.version}</version>
