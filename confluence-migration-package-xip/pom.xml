@@ -38,6 +38,23 @@
       <version>${xwiki-pro.version}</version>
       <type>xar</type>
       <scope>provided</scope>
+      <exclusions>
+        <!-- For some reasons, the analytics application pulls jersey-server and jersey-client,
+             which pull jakarta.ws.rs:jakarta.ws.rs-api, which is banned. So we exclude that. -->
+        <exclusion>
+          <groupId>org.glassfish.jersey.core</groupId>
+          <artifactId>jersey-server</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.glassfish.jersey.core</groupId>
+          <artifactId>jersey-client</artifactId>
+        </exclusion>
+        <!-- active directory has a transitive dependency to security-script, which doesn't exist anymore -->
+        <exclusion>
+          <groupId>org.xwiki.platform</groupId>
+          <artifactId>xwiki-platform-security-script</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>com.xwiki.confluence</groupId>
