@@ -110,11 +110,11 @@
         <type>xar</type>
       </dependency>
       <dependency>
-       <groupId>com.xwiki.urlshortener</groupId>
-       <artifactId>application-urlshortener-ui</artifactId>
-       <version>${urlshortener.version}</version>
-       <type>xar</type>
-     </dependency>
+        <groupId>com.xwiki.urlshortener</groupId>
+        <artifactId>application-urlshortener-ui</artifactId>
+        <version>${urlshortener.version}</version>
+        <type>xar</type>
+      </dependency>
       <dependency>
         <groupId>com.xwiki.diagram</groupId>
         <artifactId>application-diagram-api</artifactId>
@@ -165,7 +165,7 @@
       </dependency>
       <dependency>
         <groupId>com.xwiki.date</groupId>
-	<artifactId>macro-date-default</artifactId>
+        <artifactId>macro-date-default</artifactId>
         <version>${task-manager.version}</version>
       </dependency>
       <dependency>
