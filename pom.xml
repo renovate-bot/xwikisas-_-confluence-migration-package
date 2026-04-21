@@ -34,7 +34,7 @@
     <licensing.version>1.32.1</licensing.version>
     <confluence-xml.version>9.93.0</confluence-xml.version>
     <confluence-migrator.version>1.41.2</confluence-migrator.version>
-    <pro-macros.version>1.30.1</pro-macros.version>
+    <pro-macros.version>1.31.0</pro-macros.version>
     <task-manager.version>3.10.2</task-manager.version>
     <blog-application.version>9.15.9</blog-application.version>
     <macro-pdf.version>2.7</macro-pdf.version>
@@ -519,73 +519,6 @@
         <groupId>org.xwiki.platform</groupId>
         <artifactId>xwiki-platform-notifications-notifiers-default</artifactId>
         <version>${platform.version}</version>
-      </dependency>
-      <!-- more specifically for the pro macros -->
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-tag-ui</artifactId>
-        <version>${platform.version}</version>
-        <type>xar</type>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-wiki-user-api</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-wiki-user-default</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-model-validation-default</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-search-solr-query</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-query-manager</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-wiki-script</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-rendering-async-default</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-filter-event-model</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-filter-script</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-classloader-xwiki</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.commons</groupId>
-        <artifactId>xwiki-commons-filter-api</artifactId>
-        <version>${commons.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.commons</groupId>
-        <artifactId>xwiki-commons-displayer</artifactId>
-        <version>${commons.version}</version>
       </dependency>
       <!-- End of dependency management items needed as long as some extensions have older parents -->
     </dependencies>
