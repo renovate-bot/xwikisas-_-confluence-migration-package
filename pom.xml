@@ -251,6 +251,36 @@
       <!-- the following dependency management items are needed as long as some extensions have older parents -->
       <dependency>
         <groupId>org.xwiki.platform</groupId>
+        <artifactId>xwiki-platform-resource-api</artifactId>
+        <version>${platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.commons</groupId>
+        <artifactId>xwiki-commons-diff-display</artifactId>
+        <version>${commons.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.platform</groupId>
+        <artifactId>xwiki-platform-filter-script</artifactId>
+        <version>${platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.platform</groupId>
+        <artifactId>xwiki-platform-filter-event-model</artifactId>
+        <version>${platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.platform</groupId>
+        <artifactId>xwiki-platform-rendering-async-default</artifactId>
+        <version>${platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.platform</groupId>
+        <artifactId>xwiki-platform-classloader-xwiki</artifactId>
+        <version>${platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.xwiki.platform</groupId>
         <artifactId>xwiki-platform-rest-server</artifactId>
         <version>${platform.version}</version>
       </dependency>
@@ -486,39 +516,6 @@
         <groupId>org.xwiki.commons</groupId>
         <artifactId>xwiki-commons-script</artifactId>
         <version>${commons.version}</version>
-      </dependency>
-      <!-- More specifically for the task application -->
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-icon-ui</artifactId>
-        <version>${platform.version}</version>
-        <type>xar</type>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-icon-default</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-wiki-user-script</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-mentions-ui</artifactId>
-        <version>${platform.version}</version>
-        <type>xar</type>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-notifications-filters-watch</artifactId>
-        <version>${platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xwiki.platform</groupId>
-        <artifactId>xwiki-platform-notifications-notifiers-default</artifactId>
-        <version>${platform.version}</version>
       </dependency>
       <!-- End of dependency management items needed as long as some extensions have older parents -->
     </dependencies>
